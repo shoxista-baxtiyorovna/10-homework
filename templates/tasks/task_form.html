@@ -19,14 +19,14 @@
         <label for="description">Description</label>
         <textarea id="description" name="description">{{ task.description }}</textarea>
         <br><br>
-        <button type="submit" class="create_btn">{% if task %}Update Task{% else %} Create Task {% endif %}</button>
+        <button type="submit" class="cre_up_btn">{% if task %}Update Task{% else %} Create Task {% endif %}</button>
         <br><br>
 
     </form>
     {% if task %}
-        <button><a href="{{ task.get_detail_url}}" class="back_btn">Back to Detail</a></button>
+        <button class="back_btn"><a href="{{ task.get_detail_url}}">Back to Detail</a></button>
     {% else %}
-         <button><a href="{% url 'tasks:task_list' %}" class="back_btn">Back to List</a></button>
+         <button class="back_btn"><a href="{% url 'tasks:task_list' %}">Back to List</a></button>
     {% endif %}
 </body>
 </html>

@@ -28,26 +28,27 @@
     display: block;
     width: fit-content;
 }
+
 .back_btn a{
     text-decoration: none;
 
 }
+
+.delete_btn {
+    color: #360408;
+}
+
+
 .cre_up_btn {
-color: white;
-background-color: green;
+    color: white;
+    background-color: green;
 }
 
 
-h1 {
+h1, h2 {
     color: teal;
     font-family: arial;
 }
 
-h2 {
-    color: teal;
-    font-family: arial;
-}
-.btn{
-color:red;
-}
+
 

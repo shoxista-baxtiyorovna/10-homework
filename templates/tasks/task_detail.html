@@ -11,10 +11,10 @@
     <h2>Task: {{ task.task_title }}</h2>
     <h3>Due Date: {{ task.due_date }}</h3>
     <h3>Description: {{ task.description }}</h3>
-    <button type="submit"><a href="{{ task.get_delete_url }}">Delete Task</a></button>
-    <button><a href="{{ task.get_update_url }}" class="create_btn">Update Task</a></button>
+    <button type="submit" class="delete_btn"><a href="{{ task.get_delete_url }}">Delete Task</a></button>
+    <button class="cre_up_btn"><a href="{{ task.get_update_url }}">Update Task</a></button>
     <br><br>
-    <button><a href="{% url 'tasks:task_list' %}" class="back_btn">Back to List</a></button>
+    <button class="back_btn"><a href="{% url 'tasks:task_list' %}">Back to List</a></button>
 
 </body>
 </html>

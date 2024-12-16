@@ -8,7 +8,7 @@
 </head>
 <body class="note">
     <h1>Note List</h1>
-    <button class="btn"><a  href="{% url 'notes:note_create' %}">Create Note</a></button>
+    <button class="cre_up_btn"><a  href="{% url 'notes:note_create' %}">Create Note</a></button>
     {% for note in notes %}
         <a href="{{ note.get_detail_url }}"><h3>{{ note.note_title }}</h3></a>
     {% empty %}
