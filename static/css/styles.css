@@ -2,14 +2,31 @@
     background-color: lightblue;
 }
 
+.home_list {
+    background-color: #396adb;
+    color: white;
+}
+
 .note {
     background-color: lightblue;
 }
 
 .task {
-    background-color: #a0dce8;
+    background-color: #adc4ff;
 }
 
+.task_page {
+    color: #4561a8;
+}
+
+.task_list {
+    background-color: #3957a3;
+    color: white;
+    font-family: arial;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+}
 /* for mutual tags */
 
 .home_link {
@@ -29,26 +46,46 @@
     width: fit-content;
 }
 
-.back_btn a{
+.back_btn a {
     text-decoration: none;
+    color: white;
 
 }
 
 .delete_btn {
-    color: #360408;
+    background-color: #3335ab;
+}
+
+.delete_btn a {
+    color: white;
+    text-decoration: none;
 }
 
 
 .cre_up_btn {
-    color: white;
     background-color: green;
+    color: white;
 }
 
+.cre_up_btn a {
+    color: white;
+    text-decoration: none;
+}
 
-h1, h2 {
+h1 {
     color: teal;
     font-family: arial;
 }
 
+h2, h3 {
+    background-color: teal;
+    color: white;
+    font-family: arial;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+}
 
-
+a {
+    text-decoration: none;
+}

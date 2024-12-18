@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body class="task">
-    <h1>Task List</h1>
+    <h1 class="task_page">Task List</h1>
     <button class="cre_up_btn"><a href="{% url 'tasks:task_create' %}">Create Task</a></button>
     {% for task in tasks %}
-        <a href="{{ task.get_detail_url }}"><h3>{{ task.task_title }}</h3></a>
+        <a href="{{ task.get_detail_url }}"><h3 class="task_list">{{ task.task_title }}</h3></a>
     {% empty %}
         <h3>There are no tasks yet</h3>
     {% endfor %}

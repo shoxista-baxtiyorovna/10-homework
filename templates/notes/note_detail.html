@@ -11,7 +11,7 @@
     <h2>Note: {{ note.note_title }}</h2>
     <h3>Content: {{ note.content }}</h3>
     <button type="submit" class="delete_btn"><a href="{{ note.get_delete_url }}">Delete Note</a></button>
-    <button><a href="{{ note.get_update_url }}">Update Note</a></button>
+    <button class="cre_up_btn"><a href="{{ note.get_update_url }}">Update Note</a></button>
     <br><br>
     <button class="back_btn"><a href="{% url 'notes:note_list' %}">Back to List</a></button>
 

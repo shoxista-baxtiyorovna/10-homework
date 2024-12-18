@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body class="task">
-    <h1>{% if task %}Update Task {% else %}Create Task{% endif %}</h1>
+    <h1 class="task_page">{% if task %}Update Task {% else %}Create Task{% endif %}</h1>
     <form method="post">
         {% csrf_token %}
         <label for="task_title">Task Title</label>
